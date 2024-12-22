@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar - Information</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f0f1d;
+            color: #e0e0e0;
+        }
+        .gradient-bg {
+            background: linear-gradient(120deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .btn-primary {
+            background-color: #5865f2;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #4752c4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-xl font-bold">Lunar</a>
+            <div>
+                <a href="info" class="px-4">Info</a>
+                <a href="faq" class="px-4">FAQ</a>
+                <a href="discord" class="px-4">Discord</a>
+                <a href="github" class="px-4">Github</a>
+                <a href="more" class="px-4">More</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">About Lunar</h1>
+            <p class="text-lg md:text-2xl mb-8">Discover how Lunar helps you master A Township Tale.</p>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">What is Lunar?</h2>
+            <p class="text-lg mb-8 text-center">
+                Lunar is a companion bot designed to enhance your experience in <strong>A Township Tale</strong>. Whether you're a seasoned adventurer or a newcomer to the game, Lunar provides valuable tools, guides, and community support to help you thrive.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Interactive Crafting Guides</h3>
+                    <p>Learn to craft weapons, tools, and more with step-by-step instructions tailored to your needs.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Resource Locations</h3>
+                    <p>Easily find resources with comprehensive location guides that save you time and effort.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Community Tips</h3>
+                    <p>Connect with a thriving community for advice, tips, and strategies to maximize your gameplay.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Custom Tools</h3>
+                    <p>Access exclusive tools to plan your adventures, manage resources, and track progress in the game.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="gradient-bg text-white py-20 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Get Started with Lunar</h2>
+            <p class="text-lg mb-8">Join our community and elevate your A Township Tale experience today.</p>
+            <a href="/discord" class="btn-primary px-6 py-3 rounded-full shadow-md text-lg hover:shadow-lg">Join Discord</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Lunar. All Rights Reserved.</p>
+            <div class="flex justify-center mt-4">
+                <a href="#" class="mx-2 hover:text-gray-300">Privacy Policy</a>
+                <a href="#" class="mx-2 hover:text-gray-300">Terms of Service</a>
+                <a href="#" class="mx-2 hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

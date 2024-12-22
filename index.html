@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar - Your A Township Tale Companion</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(120deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .nav-link:hover {
+            color: #00d9ff;
+        }
+        body {
+            background-color: #0f0f1d;
+            color: #e0e0e0;
+        }
+        .card {
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+        }
+        .card:hover {
+            background-color: #16213e;
+        }
+        footer {
+            background-color: #0f0f1d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-xl font-bold">Lunar</a>
+            <div>
+                <a href="test" class="px-4">Info</a>
+                <a href="faq" class="px-4">FAQ</a>
+                <a href="discord" class="px-4">Discord</a>
+                <a href="github" class="px-4">Development</a>
+                <a href="more" class="px-4">More</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to Lunar</h1>
+            <p class="text-lg md:text-2xl mb-8">Your Ultimate Companion for A Township Tale.</p>
+            <div>
+                <a href="/info" class="bg-gray-800 text-white px-6 py-3 rounded-full shadow-md hover:bg-gray-700">Learn More</a>
+                <a href="/faq" class="bg-transparent border border-white px-6 py-3 rounded-full shadow-md hover:bg-white hover:text-gray-900">FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Why Use Lunar?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-lg shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-4">Crafting Guides</h3>
+                    <p>Get detailed instructions for crafting tools, weapons, and more.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-4">Resource Locations</h3>
+                    <p>Find the best spots to gather materials and optimize your time.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-4">Community Tips</h3>
+                    <p>Join our Discord to learn from fellow adventurers and share your expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Lunar. All Rights Reserved.</p>
+            <div class="flex justify-center mt-4">
+                <a href="#" class="mx-2 hover:text-gray-300">Privacy Policy</a>
+                <a href="#" class="mx-2 hover:text-gray-300">Terms of Service</a>
+                <a href="#" class="mx-2 hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // GSAP animations
+        gsap.from(".gradient-bg h1", { duration: 1, y: -50, opacity: 0 });
+        gsap.from(".gradient-bg p", { duration: 1.5, y: 50, opacity: 0 });
+        gsap.from(".gradient-bg a", { duration: 2, scale: 0, opacity: 0, stagger: 0.2 });
+    </script>
+</body>
+</html>
